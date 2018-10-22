@@ -66,4 +66,12 @@ export class AppComponent {
     this.Samples.splice(index,1,this.SampleEdit);
     this.isEdit=false;
   }
+  cancel()
+  {
+    this.id=null;
+    this.name='';
+    this.phoneNumber=null;
+    this.address='';
+    this.isEdit=false;
+  }
 }

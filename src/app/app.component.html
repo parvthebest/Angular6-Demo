@@ -51,7 +51,7 @@
   <div style="width:60%;margin: auto ">
     <button (click)="addRow()" *ngIf="!isEdit" class="btn btn-dark">Add</button>
     <button style="margin: 5px" (click)="editRow()" *ngIf="isEdit" class="btn btn-dark">Save</button>
-    <button (click)="isEdit=false" *ngIf="isEdit" class="btn btn-dark">Cancel</button>
+    <button (click)="cancel()" *ngIf="isEdit" class="btn btn-dark">Cancel</button>
   </div>
 </div>
 <br>
