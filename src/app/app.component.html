@@ -18,7 +18,9 @@
   </li>
 </ul>
  -->
-<div style="width:30%;margin: auto ">
+
+ <!-- first -->
+<div style="width:30%;margin: auto "> 
   <h3 style="width:50%;margin: auto;font-style: oblique">Enter Details</h3>
   <br>
   <form>
@@ -55,6 +57,7 @@
   </div>
 </div>
 <br>
+<!-- middle -->
 <div style="text-align:center">
   <table class="table table-bordered">
     <thead class="thead-dark">
@@ -88,8 +91,9 @@
     </tbody>
   </table>
 </div>
+<!-- last -->
 <div *ngIf="isDetail">
-   <h2>{{Sample.name}} Details</h2>
+   <h2>Details of {{Sample.name}}</h2>
    <ul>
      <li>
        Id : {{Sample.id}}
